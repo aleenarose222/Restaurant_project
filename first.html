@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <body>
+        <img src="realistic.jpg" alt="Sample Image" width="1350" height="450">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KFC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            float: left;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu-item h3 {
+            margin: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .contact, .reservation {
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact h2, .reservation h2 {
+            margin-top: 0;
+        }
+
+        .contact input, .reservation input, .reservation button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact input[type="submit"]:hover {
+            background-color: #dd0c0c;
+        }
+    </style>
+</head>
+
+
+    <!-- Header Section -->
+    <header>
+        <h1 style="font-family: Arial, Helvetica, sans-serif;">SAVOURY RESTAURANT</h1>
+        <p style="color: #dd0c0c;"> LET'S EAT TOGETHER </p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Make a Reservation</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <h3>Fried chicken</h3>
+            <span> 150/piece</span>
+        </div>
+        <div class="menu-item">
+            <h3> biriyani</h3>
+            <span>250/-</span>
+        </div>
+        <div class="menu-item">
+            <h3> grilled chicken</h3>
+            <span>200/-</span>
+        </div>
+        <div class="menu-item">
+            <h3> shawarma</h3>
+            <span>200/-</span>
+        </div>
+        <div class="menu-item">
+            <h3> grilled lamb</h3>
+            <span>400/-</span>
+        </div>
+        <div class="menu-item">
+            <h3> beef steak with potato smash</h3>
+            <span>300/-</span>
+        </div>
+        <div class="menu-item">
+            <h3> shawai</h3>
+            <span>200/-</span>
+        </div>
+
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <h2>Make a Reservation</h2>
+        <form action="#">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="number" name="people" placeholder="Number of People" required>
+            <input type="datetime-local" name="time" required>
+            <button type="submit">Reserve Now</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="phn" name="phn" placeholder="Your phone number" required>
+            <textarea name="message" rows="5" placeholder="review" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy;SAVOURY RESTAURANT 2024  . All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
